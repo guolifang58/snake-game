@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  background: linear-gradient(135deg, #1a2a6c, #2a4d69);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.score-board span {
+  color: #ffd93d;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+.game-area {
+  position: relative;
+  display: inline-block;
+}
+
+#game {
+  background: #0f1a2b;
+  border-radius: 8px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 26, 43, 0.85);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+
+.overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay-text p {
+  font-size: 22px;
+  margin: 8px 0;
+}
+
+.overlay-text .hint {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #ffd93d;
+  color: #1a2a6c;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.2s;
+}
+
+button:hover {
+  background: #ffe566;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.footer-tip {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #99a;
+}

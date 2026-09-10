@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>贪吃蛇小游戏</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐍 贪吃蛇</h1>
+
+    <div class="score-board">
+      <div>得分:<span id="score">0</span></div>
+      <div>最高分:<span id="high-score">0</span></div>
+    </div>
+
+    <div class="game-area">
+      <canvas id="game" width="400" height="400"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="overlay-text">
+          <p id="overlay-title">按空格开始游戏</p>
+          <p class="hint">方向键或 WASD 控制移动</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="start-btn">开始 / 暂停</button>
+      <button id="reset-btn">重新开始</button>
+    </div>
+
+    <p class="footer-tip">吃食物 +10 分 · 撞墙或咬到自己就结束 · 空格键暂停</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
